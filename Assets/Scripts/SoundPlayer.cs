@@ -49,7 +49,7 @@ public class SoundPlayer : MonoBehaviour
             pdPatch.SendSymbol(sound_type[i], name);
             string[] temp = sounds[i].name.Split('-');
             float timeSig = (float)Convert.ToInt32(temp[0])/(float)Convert.ToInt32(temp[1]);
-            Debug.Log(timeSig);
+            // Debug.Log(timeSig);
             sigArr.Add(timeSig);
             timeArr.Add(0);
         }
@@ -61,7 +61,7 @@ public class SoundPlayer : MonoBehaviour
         float time = (int)(Time.smoothDeltaTime *1000) ;
 
         // Debug.Log((int)(1.0f / Time.smoothDeltaTime));
-        Debug.Log(time + " " + "hi");
+        // Debug.Log(time + " " + "hi");
         for (int i = 0; i < timeArr.Count; i++){
             timeArr[i] += time;
         }
@@ -88,7 +88,7 @@ public class SoundPlayer : MonoBehaviour
                     // Debug.Log(beat * sigArr[i] + " " + sound_type[i] + " " + timeArr[i]);
                     // Debug.Log(count);
                     soundObjsRenderers[i].enabled = true;
-                    soundObjs[i].transform.position = new Vector3(UnityEngine.Random.value *20, UnityEngine.Random.value *10,0);
+                    soundObjs[i].transform.position = new Vector3(UnityEngine.Random.value *20, UnityEngine.Random.value *10,UnityEngine.Random.value *16);
                     pdPatch.SendBang(sound_type[i] + "_bang");
                 }
                 else{
