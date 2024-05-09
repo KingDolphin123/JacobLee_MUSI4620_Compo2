@@ -11,7 +11,9 @@ The light is also animated through the timeline and also has no correlation to a
 To play this project, one must individually activate each sound. Instead of all sounds being defaulted to on, the gradual build up of noise allows the 
 user to understand which sphere correlates to which polymeter. The user input element of the project also allows for greater understanding of each 
 element of sound as the user must interact with the project for each sound to play. 
+
 ![image](https://github.com/KingDolphin123/JacobLee_MUSI4620_FinalComp/assets/35504923/8085315d-a2c1-4722-9aac-4e65f0946020)
+
 The checkboxes turn each individual noise on and off, and are found in the "Sound" object. It is recommended to play with turning on and off the polymeter 
 objects before turning on the drum and bass objects for maximum effect. 
 
